@@ -2,4 +2,4 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-python $DIR/helpers/getArtistCatalog.py elonmusk "$DIR"/musk.txt
+python $DIR/helpers/getTweets.py elonmusk "$DIR"/musk.txt

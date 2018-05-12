@@ -2,4 +2,4 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-python "$DIR"/helpers/getArtistCatalog.py realDonaldTrump "$DIR"/trump.txt
+python "$DIR"/helpers/getTweets.py realDonaldTrump "$DIR"/trump.txt
