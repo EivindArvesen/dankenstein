@@ -22,8 +22,8 @@ def get_all_tweets(screen_name, file_name=False):
     #Twitter only allows access to a users most recent 3240 tweets with this method
 
     #authorize twitter, initialize tweepy
-    auth = tweepy.OAuthHandler(twitterCredentials.consumer_key, twitterCredentials.consumer_secret)
-    auth.set_access_token(twitterCredentials.access_key, twitterCredentials.access_secret)
+    auth = tweepy.OAuthHandler(twitterCredentials.CONSUMER_KEY, twitterCredentials.CONSUMER_SECRET)
+    auth.set_access_token(twitterCredentials.ACCESS_KEY, twitterCredentials.ACCESS_SECRET)
     api = tweepy.API(auth)
 
     #initialize a list to hold all the tweepy Tweets

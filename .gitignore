@@ -1,3 +1,4 @@
 **/*.pyc
 corpus/*.txt
 twitterCredentials.py
+dankenstein/model.p
