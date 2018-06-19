@@ -22,4 +22,4 @@ clean:
 	@rm ./corpus/*.txt
 
 tweet:
-	@bash ./dankenstein/bot.sh
+	@source twitterCredentials.sh && bash ./dankenstein/bot.sh

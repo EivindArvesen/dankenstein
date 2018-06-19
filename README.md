@@ -1,13 +1,13 @@
 # Dr. Dankenstein
 
 Markov Chain Twitter Bot generator.
-
 Mashup.
-Deps.
+
+Dependencies.
 
 Described in URL
 
-Use the source, Luke.
+Use the source, Luke!
 
 Args for model generator:
 corpus1 corpus2 [(scale1 scale2) stateSize overlapTotal overlapRatio tries sentences modelComplexity]
@@ -17,8 +17,12 @@ e.g.
 make model ARGS="tcm jobs 2.5 1 2 7 42 10 25 expert"
 ```
 
+possible args to make...
+
 make combinations | grep "bush +"
 make combinations | grep "picard +"
+
+Deployment:
 
 Run:
 ```bash
