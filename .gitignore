@@ -1,4 +1,3 @@
 **/*.pyc
 corpus/*.txt
-dankenstein/model.p
 twitterCredentials.sh

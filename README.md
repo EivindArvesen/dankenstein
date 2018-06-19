@@ -19,3 +19,9 @@ make model ARGS="tcm jobs 2.5 1 2 7 42 10 25 expert"
 
 make combinations | grep "bush +"
 make combinations | grep "picard +"
+
+Run:
+```bash
+heroku config:add CONSUMER_KEY=consumer_key CONSUMER_SECRET=consumer_secret ACCESS_KEY=acces_key ACCESS_SECRET=access_secret
+"
+```
