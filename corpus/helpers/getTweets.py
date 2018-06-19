@@ -8,22 +8,13 @@ import csv
 import re
 import sys
 
-def load_src(name, fpath):
-    # From https://pythonadventures.wordpress.com/tag/import-from-parent-directory/
-    import os, imp
-    p = fpath if os.path.isabs(fpath) \
-        else os.path.join(os.path.dirname(__file__), fpath)
-    return imp.load_source(name, p)
-
-twitterCredentials = load_src("*", "../../twitterCredentials.py")
-
 
 def get_all_tweets(screen_name, file_name=False):
     #Twitter only allows access to a users most recent 3240 tweets with this method
 
     #authorize twitter, initialize tweepy
-    auth = tweepy.OAuthHandler(twitterCredentials.CONSUMER_KEY, twitterCredentials.CONSUMER_SECRET)
-    auth.set_access_token(twitterCredentials.ACCESS_KEY, twitterCredentials.ACCESS_SECRET)
+    auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+    auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
     api = tweepy.API(auth)
 
     #initialize a list to hold all the tweepy Tweets
