@@ -10,7 +10,7 @@ combinations:
 # Provide arguments like so:
 #	make models ARGS="corpus1 corpus2 [(scale1 scale2) stateSize overlapTotal overlapRatio tries sentences modelComplexity]"
 model:
-	@python ./dankenstein/trainModel.py ${ARGS}
+	@source twitterCredentials.sh && python ./dankenstein/trainModel.py ${ARGS}
 
 sentence:
 	@python ./dankenstein/makeSentences.py 1

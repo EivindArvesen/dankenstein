@@ -5,6 +5,7 @@
 
 import tweepy #https://github.com/tweepy/tweepy
 import csv
+import os
 import re
 import sys
 
@@ -13,8 +14,8 @@ def get_all_tweets(screen_name, file_name=False):
     #Twitter only allows access to a users most recent 3240 tweets with this method
 
     #authorize twitter, initialize tweepy
-    auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-    auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+    auth = tweepy.OAuthHandler(os.environ['CONSUMER_KEY'], os.environ['CONSUMER_SECRET'])
+    auth.set_access_token(os.environ['ACCESS_KEY'], os.environ['ACCESS_SECRET'])
     api = tweepy.API(auth)
 
     #initialize a list to hold all the tweepy Tweets
