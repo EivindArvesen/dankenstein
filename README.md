@@ -84,7 +84,7 @@ make model ARGS="corpus1 corpus2 [(scale1 scale2) stateSize overlapTotal overlap
                 defaults to "naive"
 
     EXAMPLE:
-        make model ARGS="tcm jobs 2.5 1 2 7 42 10 25 expert"
+        make model ARGS="tcm jobs 1 1 2 7 42 10 25 expert"
 
 make sentence:
     Outputs one sentence based on an available (previously trained) model.
