@@ -4,7 +4,7 @@ Dankenstein is a Markov Chain Twitter Bot generator, based on making a mashup of
 
 It is described in [this blogpost](https://www.eivindarvesen.com/blog/2018/06/20/paging-dr--dankenstein).
 
-## Dependencies.
+## Dependencies
 The software itself is implemented using Bash, Make, and Python.
 
 You'll need a Twitter Account and a Twitter application. From the latter, you'll need a consumer key, a consumer secret, an access token and an access token secret.
