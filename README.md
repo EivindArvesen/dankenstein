@@ -52,11 +52,11 @@ make model ARGS="corpus1 corpus2 [(scale1 scale2) stateSize overlapTotal overlap
                 no default
 
         scale1
-            float - scale of corpus1 relative to corpus2
+            float/int - scale of corpus1 relative to corpus2
                 defaults to 1
 
         scale2
-            float - scale of corpus2 relative to corpus1
+            float/int - scale of corpus2 relative to corpus1
                 defaults to 1
 
         stateSize
@@ -84,7 +84,7 @@ make model ARGS="corpus1 corpus2 [(scale1 scale2) stateSize overlapTotal overlap
                 defaults to "naive"
 
     EXAMPLE:
-        make model ARGS="tcm jobs 1 1 2 7 42 10 25 expert"
+        make model ARGS="tcm jobs 3 1 2 7 50 10 25 expert"
 
 make sentence:
     Outputs one sentence based on an available (previously trained) model.
