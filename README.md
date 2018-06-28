@@ -14,7 +14,7 @@ Enter these into `twitterCredentials.sh`
 To generate the supported datasets you'll need :
 
 - [Poppler](https://poppler.freedesktop.org/)
-    - `brew install poppler` on macOS`
+    - `brew install poppler` on macOS
     - `sudo apt-get install -y poppler-utils` on Ubuntu
 
 After that, you can run  the `importEnv.sh` script in the `dev`-folder. This will create a Python virtual environment (conda if you have it, virtualenv otherwise) called `dankenstein`, and install all python-dependencies.
@@ -84,7 +84,7 @@ make model ARGS="corpus1 corpus2 [(scale1 scale2) stateSize overlapTotal overlap
                 defaults to "naive"
 
     EXAMPLE:
-        make model ARGS="tcm jobs 3 1 2 7 50 10 25 expert"
+        make model ARGS="tcm jobs 5 1 2 8 80 10 25 expert"
 
 make sentence:
     Outputs one sentence based on an available (previously trained) model.
