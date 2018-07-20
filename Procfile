@@ -1,1 +1,1 @@
-worker: bash dankenstein/bot.sh && sleep 14400
+worker: bash dankenstein/bot.sh && sleep 21600
