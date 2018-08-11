@@ -9,7 +9,7 @@ from POSifiedText import *
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Load model and variables from pickle
-data = pickle.load( open( current_dir+'/model.p', "rb" ) )
+data = pickle.load( open( current_dir+'/model.pkl', "rb" ) )
 
 if len(sys.argv) > 1:
     data['sentences'] = int(sys.argv[1])

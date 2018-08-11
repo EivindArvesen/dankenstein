@@ -80,4 +80,4 @@ model_combo = markovify.combine([ model_a, model_b ], [ ratio1base*ratio1, ratio
 
 
 # Pickle what we need
-pickle.dump( {'model': model_combo, 'overlap_total': overlap_total, 'overlap_ratio': overlap_ratio, 'tries':tries, 'sentences': sentences}, open( current_dir+'/model.p', "wb" ) )
+pickle.dump( {'model': model_combo, 'overlap_total': overlap_total, 'overlap_ratio': overlap_ratio, 'tries':tries, 'sentences': sentences}, open( current_dir+'/model.pkl', "wb" ) )
