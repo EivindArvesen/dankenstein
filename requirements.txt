@@ -6,7 +6,7 @@ darklyrics==0.1.5
 idna==2.6
 lxml==4.2.1
 markovify==0.7.1
-nltk==3.3
+nltk==3.4.5
 oauthlib==2.0.7
 PySocks==1.6.8
 requests>=2.20.0
@@ -15,5 +15,5 @@ six==1.11.0
 slacker==0.9.65
 tweepy==3.6.0
 Unidecode==1.0.22
-urllib3~>1.23
+urllib3>=1.23
 wikiquotes==1.4
