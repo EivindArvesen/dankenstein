@@ -4,7 +4,7 @@ certifi==2018.4.16
 chardet==3.0.4
 darklyrics==0.1.5
 idna==2.6
-lxml==4.6.3
+lxml==4.9.1
 markovify==0.7.1
 nltk==3.6.5
 oauthlib==2.0.7
